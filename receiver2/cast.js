@@ -23,7 +23,7 @@ $(document).ready(function () {
     window.castReceiverManager.setApplicationState("Application status is ready...");
   };
 
-  window.messageBus = window.castReceiverManager.getCastMessageBus(namespace);
+  window.messageBus = window.castReceiverManager.getCastMessageBus('urn:x-cast:fr.xebia.workshop.cast.maze');
 
   /**
    * When sender connected
