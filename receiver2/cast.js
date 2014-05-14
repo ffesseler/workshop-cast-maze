@@ -15,6 +15,7 @@ $(document).ready(function () {
     cast.receiver.logger.setLevelValue(0);
 
     window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
+    window.castReceiverManager.start();
     log('Starting receiver manager');
 
     window.castReceiverManager.onReady = function (event) {
